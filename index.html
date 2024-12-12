@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            Delicious Restaurant
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Delicious Restaurant</h1>
+            <p>Experience the finest cuisine in town</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Main Course">Main Course</button>
+            <button class="filter-btn" data-category="Starters">Starters</button>
+            <button class="filter-btn" data-category="Desserts">Desserts</button>
+        </div>
+        <div class="menu-container">
+            <!-- Menu items will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Register Now</h2>
+        <form id="registration-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <div class="chat-header">
+            <h3><i class="fas fa-robot"></i> Restaurant Assistant</h3>
+            <button id="toggle-chat">−</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="message bot">
+                    Hello! Welcome to Delicious Restaurant. How can I help you today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
